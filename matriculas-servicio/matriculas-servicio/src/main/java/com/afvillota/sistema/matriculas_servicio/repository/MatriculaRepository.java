@@ -1,4 +1,4 @@
-package com.afvillota.sistema.matriculas_servicio.repository
+package com.afvillota.sistema.matriculas_servicio.repository;
 
 import com.afvillota.sistema.matriculas_servicio.model.Matricula;
 import org.springframework.data.mongodb.repository.MongoRepository;

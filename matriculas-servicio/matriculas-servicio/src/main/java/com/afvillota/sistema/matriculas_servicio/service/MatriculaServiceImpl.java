@@ -36,12 +36,14 @@ public class MatriculaServiceImpl implements MatriculaService {
     @Override
     public Matricula save(Matricula matricula) {
         // En la versión básica, podríamos asignar fecha y estado por defecto aquí si no vienen
-        if (matricula.getFechaMatricula() == null) {
-             matricula.setFechaMatricula(LocalDateTime.now());
+
+        // Estas líneas dependen de que Lombok (@Data en Matricula.java) genere los métodos
+        if (matricula.getFechaMatricula() == null) { // <-- Editor necesita ver getFechaMatricula() de Lombok
+             matricula.setFechaMatricula(LocalDateTime.now()); // <-- Editor necesita ver setFechaMatricula() de Lombok
         }
-         if (matricula.getEstado() == null) {
-             matricula.setEstado("PENDIENTE_VALIDACION"); // Estado inicial
-         }
+         if (matricula.getEstado() == null) { // <-- Editor necesita ver getEstado() de Lombok
+             matricula.setEstado("PENDIENTE_VALIDACION"); // <-- Editor necesita ver setEstado() de Lombok
+        }
         return matriculaRepository.save(matricula);
     }
 
