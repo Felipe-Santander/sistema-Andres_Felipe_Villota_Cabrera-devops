@@ -5,7 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.afvillota.sistema</groupId>
-    <artifactId>sistema-devops-parent</artifactId> <version>1.0.0-SNAPSHOT</version> <packaging>pom</packaging> <name>sistema-devops-parent</name>
+    <artifactId>sistema-devops-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging> <name>sistema-devops-parent</name>
     <description>Proyecto Padre para el Sistema Distribuido con Enfoque DevOps</description>
 
     <properties>
@@ -15,13 +17,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         </properties>
 
-        <modules>
-            <module>eureka-server/eureka-server</module>
-            <module>usuarios-servicio/usuarios-servicio</module>
-            <module>asignaturas-servicio/asignaturas-servicio</module>
-            <module>matriculas-servicio/matriculas-servicio</module>
-            <module>config-server/config-server</module>
-            <module>gateway-servicio/gateway-servicio</module>
-            </modules>
+    <modules>
+        <module>eureka-server/eureka-server</module>
+        <module>usuarios-servicio/usuarios-servicio</module>
+        <module>asignaturas-servicio/asignaturas-servicio</module>
+        <module>matriculas-servicio/matriculas-servicio</module>
+    </modules>
 
 </project>
