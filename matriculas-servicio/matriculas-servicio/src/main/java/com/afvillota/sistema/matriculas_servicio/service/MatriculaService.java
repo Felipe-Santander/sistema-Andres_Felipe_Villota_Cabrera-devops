@@ -7,7 +7,11 @@ import java.util.Optional;
 public interface MatriculaService {
     List<Matricula> findAll();
     Optional<Matricula> findById(String id);
-    Matricula save(Matricula matricula); // Por ahora, solo guarda
-    // Más adelante tendremos un método como "crearMatricula(usuarioId, asignaturaId)" que use Feign
+    Matricula save(Matricula matricula);
     void deleteById(String id);
+
+    // --- AÑADIR ESTA LÍNEA ---
+    Optional<Matricula> crearMatricula(String usuarioId, String asignaturaId);
+    // ------------------------
+
 }
