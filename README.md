@@ -5,7 +5,7 @@ Proyecto final de la asignatura **Lenguaje de Programación Avanzado 2**. Implem
 
 ---
 
-## 📝 Descripción del Sistema
+## 📝 Descripción del Sistema ...
 
 Este proyecto implementa un sistema básico de gestión académica utilizando una arquitectura de microservicios. Permite gestionar usuarios (estudiantes, profesores), asignaturas y matrículas. Cada servicio está desacoplado, es autónomo, se comunica con otros por medio de API REST y está preparado para escalar. El sistema es funcional, seguro, monitoreable y desplegable de manera local mediante contenedores.
 
